@@ -104,7 +104,7 @@ section {
 
 
 .formulario {
-    margin: auto;
+    margin: auto auto 150px auto;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -139,13 +139,24 @@ textarea {
 
 .imagem {
     display: flex;
-    width: 70%;
+    width: 60%;
     margin: 64px auto;
 }
+
+.video {
+    display: flex;
+    margin: 64px auto;
+    width: 60%;
+    height: 600px;
+}
+
 
 @media screen and (max-width: 1400px) {
     .menu_lateral {
         display: none;
+    }
+    .video {
+        height: 400px;
     }
 }
 
@@ -164,6 +175,9 @@ textarea {
     .formulario {
         display: none;
     }
+    .video {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -172,6 +186,9 @@ textarea {
     }
     .logo {
         width: 300px;
+    }
+    .video {
+        height: 250px;
     }
 }
 
@@ -184,5 +201,8 @@ textarea {
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 1;
+    }
+    .video {
+        height: 200px;
     }
 }
